@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  margin: 0 auto;
 }
 
 .App-logo {
@@ -10,7 +11,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 20vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,11 +24,23 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-round {
+  background-color: white;
+  border-color: #ddd;
+  border-radius: 50%;
+  margin: 1em;
+  min-height: 50px;
+  min-width: 50px;
+}
+
+.btn-icon {
+  vertical-align: middle;
+  fill: #1e9b44;
+}
+
+.highlight {
+  color: #22ff66;
+  text-shadow: 0 0 2px #22ff99;
+  transition-timing-function: ease-in;
+  transition-duration: 0.15s;
 }
