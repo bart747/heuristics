@@ -48,7 +48,6 @@ function FetchAndShow(props: any) {
     fetchNotes('ux', notesUxNr);
     fetchNotes('general', notesGeneralNr);
   }, []);
- 
 
   if (err) {
     return <div>Error while fetching</div>;

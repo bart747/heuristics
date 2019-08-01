@@ -1,5 +1,4 @@
 import React from 'react';
-import Note from './Note';
 
 function NoteGroup(props: any) {
   let i: number = 0;
@@ -7,9 +6,12 @@ function NoteGroup(props: any) {
     props.collection.map( (note: string[])  => (
       <div
         key={`${props.category}-note-${i+=1}`}
-        className="NoteList-container"
+        className="Note-container"
       >
-        <Note content={note[0]} author={note[1]} />
+        <div className="Note-body">
+          {note[0]}
+          {note[1]}
+        </div>
       </div>
     )) 
   );
